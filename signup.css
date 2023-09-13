@@ -1,0 +1,124 @@
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #031729;
+    /* align-items: center; */
+    position: relative;
+}
+.signupPage{
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    width: 300px;
+    height: 440px;
+    background-color: #fff;
+    margin-top: 70px;
+    /* margin-left: 200px; */
+    padding: 10px;
+    border-radius: 6px;
+    /* box-shadow: 2px 2px 2px 5px #c25a05; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.forBTN{
+    width: 100%;
+    /* display: flex;
+    gap: 20px;*/
+    /* background-color: #880000dc; */
+ }
+.forBTN h3{
+    color: #050101;
+    font-weight: bolder;
+    font-size: 20px;
+    /* background-color: #4a0cad; */
+    text-align: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 2px 4px;
+}
+.forDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.formDiv .input{
+    width: 90%;
+    height: 36px;
+    outline: none;
+    padding: 4px;
+    font-size: 1rem;
+    margin-left: 15px;
+    border: none;
+    border-bottom: 1px solid #5c0aa8;
+    box-shadow: -1.2px .6px 1px #5c0aa8;
+}
+.formDiv .btn{
+    background-color: #a70958;
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    padding: 2px;
+    width: 84%;
+    margin-left: 8%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.formDiv .btn:hover{    
+    background-color: #ca0769;
+}
+.formDiv p{
+    font-size: 15px;
+    margin-left: 10px;
+}
+.formDiv p a{
+    color: #124ecf;
+    font-weight: 600;
+}
+  
+
+.inputBox span{
+    font-size: 0.8rem;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    margin-left: 30px;
+    color: #747474;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,.inputBox input:focus ~ span{
+    color: #fff;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65rem;
+    padding: 0 10px;
+    background: #5c0aa8;
+    letter-spacing: 0.15rem;
+}
+
+.inputBox:nth-child(1) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span{
+    background: #5c0aa8;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid #5c0aa8;
+}
